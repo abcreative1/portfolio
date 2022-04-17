@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css">
+    <script src="bootstrap5/js/bootstrap.min.js"></script>
+    <title>Abdulrahman's portfolio</title>
+    <style>
+
+    .navBar, #hero{
+      font-family: Monospace;
+    }
+      
+       .navBar{
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding:  0;
+        backdrop-filter: blur(100px);
+      }
+      
+      
+      .navbar-nav > li{
+        padding: 5px 20px ;
+        font-size: 1.1rem;
+      }
+      
+      .nav-item:hover{
+        background-color: rgba(156, 156, 156, 0.9);
+        color: white;
+      }
+
+      #hero{
+        padding: 180px 30px 80px 30px;
+        text-align: center;
+        background-image: url("hero_back.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(50px);
+        color: white;
+        font-size: 1rem;
+        min-height: 300px;
+      }
+        
+      #about, #projects, #contact{
+        padding: 40px 10%;
+      }
+      
+      h1{
+          font-weight: bold;
+          font-size: 2.5rem;
+          margin-bottom: 15px;
+      }
+        
+      #callToAction{
+          margin-top: 25px;
+      }
+        
+      .ctaBtn{
+          width: 155px;
+          margin: 10px;
+      }
+        
+      #about{
+          font-size: 1.2rem;
+          text-align: justify;
+          /*text-justify: inter-word;*/
+      }
+       
+      #projects{
+          
+          background-color: rgb(68, 68, 68);
+          color: white;
+          font-size: 1.2rem;
+      }
+
+      #projects > h2{
+          border-left: 5px solid white ;
+          color: white;
+      }
+        
+      .title{
+          border-left: 5px solid black;
+          width: 165px;
+          padding-left: 10px;
+          font-size: 1.7rem;
+          margin-bottom: 20px;
+          font-family: monospace;
+          font-weight: bold;
+      }
+        
+      #contact{
+          
+          font-size: 1rem;
+      }
+
+      .form-group{
+          margin: 20px 0;
+      }
+
+      #textArea{
+          min-height: 150px;
+      }
+        
+      #htmlBar, #cssBar, #javascriptBar, #bootstrapBar{
+        background-color: lightgrey;
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 25px;
+        }
+
+      .javascriptProgress{
+          background-color: rgb(255, 0, 64);
+      }
+
+      .bootstrapProgress{
+          background-color: purple;
+      }
+
+      h4{
+      margin-top: 50px;
+      text-decoration: underline;
+      }
+
+      #footer{
+        text-align: center;
+        font-family: monospace;
+        color: white;
+        padding: 40px;
+      }
+      img{
+        height: 250px;
+      }
+      .navContainer{
+        padding-top: 5px ;
+        padding-bottom: 5px;
+      }
+    </style>
+</head>
+<body>
+  
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top navBar">
+      <div class="container-fluid navContainer">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto mb-0 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- hero section -->
+      <section id="hero">
+
+        <h1>I'm Abdulrahman Umar</h1>
+        <p>A Frontend Web Designer & Developer</p>
+        
+<!-- Call to action -->
+      <div id="callToAction">
+        <a href="#contact"><button class="btn btn-outline-light btn-lg ctaBtn">Contact Me</button>
+        </a>
+      </div>
+      
+      </section>
+
+      <section id="about">
+
+        <h2 class="title">About Me</h2>
+        <p id="aboutPara">
+          I'm Abdulrahman Umar, a frontend web designer & developer. When buildiing websites, i prefer simplity without compromising functionality.
+        </p>
+
+        <!-- My Skills -->
+        <h4 class="">My Skills</h4>
+          <div class="skill container-fluid" >
+          
+            <label for="htmlBar">HTML5</label>
+            <div id="htmlBar" class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+            </div>
+
+            <label for="cssBar">CSS</label>
+            <div id="cssBar" class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+            </div>
+
+            <label for="javascriptBar">JAVASCRIPT</label>
+            <div id="javascriptBar" class="progress">
+              <div class="progress-bar javascriptProgress progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+            </div>
+
+            <label for="bootstrapBar">BOOTSTRAP5</label>
+            <div id="bootstrapBar" class="progress">
+              <div class="progress-bar bootstrapProgress progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
+            </div>
+          </div>
+          <!-- hobbies -->
+          <h4>Hobbies</h4>
+          <ul>
+            <li>
+              Movies
+            </li>
+            <li>
+              Reading
+            </li>
+            <li>Coding</li>
+            <li>Workout</li>
+          </ul>
+      </section>
+
+      <section id="projects">
+
+        <h2 class="title">Projects</h2>
+        <p>A list of my previous work.</p>
+        
+
+        <div class="album py-5 album">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                 
+                  <img src="todo.jpg" alt="screenshot">
+               
+                  <div class="card-body">
+                    <p class="card-text">To-do list App.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                       <a href="projects/to-do/index.html"> <button type="button" class="btn btn-md btn-outline-secondary">View</button></a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section  -->
+      <section id="contact">
+        <h2 class="title">Contact Me</h2>
+        <div class="row">
+          <div class="col col-lg-7">
+            <form>
+              <p class="contactInfo">Lets get in touch. Send me a message:</p>
+              <p class="contactInfo">
+                Email: uabdulrahman106@gmail.com
+              </p>
+              
+<!--  
+              
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Name">
+              </div>
+
+              
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+
+              
+              <div class="form-group">
+                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+              </div>
+              
+             
+              <div class="form-group">
+                <textarea type="text" class="form-control" id="textArea" placeholder="Message"></textarea>
+              </div>
+              
+              <button id="sendBtn" type="submit" class="btn btn-dark">Send Message</button>
+-->
+            </form>
+          </div>
+        </div>
+        
+      </section>
+      <div id="footer" class="bg-dark">
+        Developed By Abdulrahman Umar ♥
+      </div>
+      
+</body>
+</html>
