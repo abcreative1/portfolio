@@ -11,7 +11,7 @@
     z-index: 1;
     width: 100vw;
     opacity: 90%;
-    
+    padding: 10px;
 }
 
 .navBar  a {
@@ -19,6 +19,8 @@
     font-size: 1.1rem;
     text-decoration: none;
     color: white;
+    border-radius: 10px;
+    margin: 0 10px 0;
 }
 
 .navBar a:hover{
@@ -45,9 +47,12 @@
     
 
 #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 180px 30px 80px 30px;
-    text-align: center;
-    background-image: url("hero_back.jpg");
+    background-image: url("images/hero_back.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +157,7 @@ h1 {
 
 h4 {
     margin-top: 50px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 #footer {
