@@ -5,43 +5,47 @@
 
 .topnav{
     background: #333;
-    padding: 10px;
-    display: flex;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
     position: fixed;
     top: 0;
     z-index: 1;
-    width: 100%;
+
 }
 
 .topnav ul{
     list-style-type: none;
-    padding: 0;
+    margin: 0;
 }
 
 .topnav ul li{
     display: inline;
+}
+
+.topnav ul li a{
     text-decoration: none;
 }
 
 .link-item{
-    text-decoration: none;
     display: inline;
     color: lightgrey;
-    margin: 0 10px 0;
-    padding: 10px;
+    text-decoration: none;
     border-radius: 10px;
+    margin: 0 15px;
+    padding: 10px;
 }
 .link-item:hover{
-    color: #333;
-    background-color: white ;
+    color: rgb(238, 235, 235);
+    background-color:gray;
 }
 
 #hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 180px 30px 80px 30px;
     background-image: url("images/hero_back.jpg");
     background-position: center;
