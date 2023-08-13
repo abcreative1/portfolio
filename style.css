@@ -34,8 +34,9 @@
     color: lightgrey;
     text-decoration: none;
     border-radius: 10px;
-   
+    margin-right: 5px;
     padding: 10px;
+    font-size: 1rem;
 }
 .link-item:hover{
     color: rgb(238, 235, 235);
@@ -62,7 +63,7 @@
 #about,
 #projects,
 #contact {
-    padding: 56px 10%;
+    padding: 70px 10%;
 }
 
 #myName {
