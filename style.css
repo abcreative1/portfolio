@@ -7,11 +7,10 @@
 .topnav {
     background: #333;
     width: 100%;
-    padding: 20px;
+    padding: 20px  0;
     position: fixed;
     top: 0;
     z-index: 1;
-    text-align: center;
 }
 
 .topnav ul {
@@ -19,6 +18,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    justify-content: center;
 }
 
 ul > .link-item > a {
@@ -37,7 +37,7 @@ ul > .link-item > a:hover{
 .link-item {
     border-radius: 10px;
     padding: 0 10px;
-    width: 25%;
+    width: 15%;
 }
 
 
