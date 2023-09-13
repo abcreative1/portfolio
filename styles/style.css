@@ -70,11 +70,10 @@ ul > .link-item > a:hover{
     justify-content: center;
     text-align: center;
     padding: 180px 30px 80px 30px;
-    background-image: url("images/hero_back.jpg");
+    background-image: url("/images/hero_back.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(50px);
     color: white;
     font-size: 1rem;
     min-height: 300px;
