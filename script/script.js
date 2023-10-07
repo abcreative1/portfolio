@@ -1,9 +1,7 @@
+var toBeTyped = document.getElementById("hero");
+var typed = document.getElementById("myName");
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+var typed = new Typed(typed, {
+    stringsElement: toBeTyped,
+    typeSpeed: 100,
+});
