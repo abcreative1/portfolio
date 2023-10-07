@@ -23,6 +23,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  text-transform: uppercase;
 }
 
 .topnav a:hover {
@@ -137,66 +138,56 @@ h1 {
   padding: 40px;
 }
 
-.navContainer {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 /* card styling */
 
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
+  display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  max-width: 300px;
-  justify-self: center;
+  max-width: 200px;
+  overflow: hidden;
+  height: 300px;
+  margin: 5px;
+}
+
+.card-image{
+  height: 200px;
 }
 
 .card-info {
-  padding: 16px;
+  background-color: rgb(241, 241, 241);
+  padding: 15px;
+  align-items: baseline;
+  align-content: baseline;
+  height: 100px;
 }
 
 .card-text {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+.card-image > img {
   object-fit: contain;
   border-radius: 5px 5px 0 0;
   width: 100%;
-  height: 100%;
 }
 
-.cards-wrapper {
-  grid-template-columns: repeat(4, auto);
-  display: grid;
-  gap: 20px;
-  justify-content: center;
-}
+
 
 @media screen and (max-width: 800px) {
-  .cards-wrapper {
-    grid-template-columns: repeat(3, 33.3%);
-  }
   #My_Skills{
     height: unset;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .cards-wrapper {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .cards-wrapper {
-    grid-template-columns: 100%;
   }
 }
 
