@@ -4,13 +4,12 @@ const close_button = document.querySelector(".btn-close")
 const navlink = document.querySelectorAll(".nav-link")
 
 nav_button.addEventListener("click", openSideNav)
+
 close_button.addEventListener("click", closeSideNav)
 
-nav.addEventListener("click", event=>{
-    if(event.target = "navlink"){
-        closeSideNav()
-    }
-})
+for (let i = 0; i < navlink.length; i++){
+  navlink[i].addEventListener("click", closeSideNav)
+}
 
 function closeSideNav(){
     nav.style.width = "0"
