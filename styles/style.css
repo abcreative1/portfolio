@@ -86,7 +86,14 @@ main{
   background-color: whitesmoke;
 }
 
-#my-services,
+#About > p {
+  text-justify: inter-word ;
+  text-justify: distribute;
+  font-size: 1.1rem;
+}
+
+#About,
+#My_Services,
 #My_Skills,
 #projects,
 #contact {
