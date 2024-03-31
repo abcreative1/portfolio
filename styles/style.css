@@ -107,8 +107,14 @@ main{
   margin-bottom: 15px;
 }
 
-#description {
+.description {
   font-size: 1.3rem;
+}
+
+.typed-cursor {
+  font-weight: 900;
+  box-shadow: 0px 1px;
+  font-size: 1.3em;
 }
 
 #myName, #description{
