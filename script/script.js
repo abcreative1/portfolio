@@ -19,16 +19,22 @@ function openSideNav() {
   nav.style.width = "100vw"
 }
 
-function animateaOnScroll() {
+function animateOnScroll() {
 
+  var about = document.querySelector('#About');
   var cards = document.querySelectorAll('.card');
   var skillCards = document.querySelectorAll('.skill-item')
   var serviceCards = document.querySelectorAll('.service-card')
 
+
+
+    about.setAttribute('data-aos', 'fade-up');
+    about.setAttribute('data-aos-once', 'true');
+
   cards.forEach(function (card) {
 
     card.setAttribute('data-aos', 'fade-up');
-
+    card.setAttribute('data-aos-once', 'true');
 
   });
 
@@ -36,15 +42,22 @@ function animateaOnScroll() {
   skillCards.forEach(function (skillcard) {
 
     skillcard.setAttribute('data-aos', 'fade-up');
+    skillcard.setAttribute('data-aos-once', 'true');
+
 
   });
-  
-  serviceCards.forEach(function(serviceCard){
+
+  serviceCards.forEach(function (serviceCard) {
+
     serviceCard.setAttribute('data-aos', 'fade-up')
+    serviceCard.setAttribute('data-aos-once', 'true');
+
   });
 
 }
-animateaOnScroll()
+
+animateOnScroll()
+
 const typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   typeSpeed: 40,
