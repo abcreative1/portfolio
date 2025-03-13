@@ -139,12 +139,17 @@
   padding: 13px
 }
 
-.ctaBtn:hover {
+.ctaBtn:hover .view-project-btn {
   background: rgb(0, 126, 184);
-
 }
 
-.fa-paper-plane{
+.view-project-btn {
+  background: rgb(0, 146, 214);
+  color: white;
+}
+
+
+.fa-paper-plane {
   margin-left: 10px;
 }
 
@@ -152,7 +157,7 @@
   width: 45px;
 }
 
-.bottom-nav{
+.bottom-nav {
   display: none;
 }
 
@@ -344,7 +349,7 @@ div.service-card {
   }
 
 
-  
+
 
 }
 
@@ -386,7 +391,7 @@ div.service-card {
   margin: 5px 2px;
   border-radius: 30%;
   border: 1px solid #333;
-  background: #333;
+  background: rgb(0, 146, 214);
   color: whitesmoke;
   transition: 0.3s;
 }
@@ -434,44 +439,55 @@ body {
 
 @media screen and (max-width: 670px) {
   .bottom-nav {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      max-width: 400px;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: space-around;
-      padding: 15px 0;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-  
-    .nav-item {
-      color: white;
-      text-align: center;
-      transition: 0.3s;
-    }
-  
-    .nav-item i {
-      font-size: 22px;
-      transition: 0.3s;
-    }
-  
-    .nav-item span {
-      display: block;
-      font-size: 12px;
-      margin-top: 5px;
-    }
-  
-    .nav-item:hover i,
-    .nav-item:hover span {
-      color: #00d4ff;
-    }
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    /* max-width: 400px; */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 
-    .topnav{
-      display: none;
-    }
+  .nav-item {
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .nav-item i {
+    font-size: 22px;
+    transition: 0.3s;
+  }
+
+  .nav-item span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .nav-item:hover a {
+    color: #00d4ff;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  #footer {
+    padding-bottom: 100px;
+  }
 }
