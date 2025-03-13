@@ -49,6 +49,8 @@
   -webkit-backdrop-filter: blur(15px) saturate(150%);
 
   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 0;
+  border-right: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: white;
 }
@@ -430,8 +432,8 @@ div.service-card {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 30%;
-  border: 1px solid #333;
-  background: rgb(0, 146, 214);
+  /* border: 1px solid #fff; */
+  /* background: rgb(0, 146, 214); */
   color: whitesmoke;
   transition: 0.3s;
 }
@@ -447,17 +449,6 @@ div.service-card {
   background-color: whitesmoke;
 }
 
-.fa-facebook {
-  /*  background: #3b5998;*/
-}
-
-.fa-google {
-  /*background: #dd4b39;*/
-}
-
-.fa-twitter {
-  /*  background: #55acee;*/
-}
 
 #socials {
   height: 70px;
@@ -473,7 +464,8 @@ div.service-card {
 }
 
 body {
-  background: #3a3a52;
+  /* background: #3a3a52; */
+  background: #232333;
 
 }
 
